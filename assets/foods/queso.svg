@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.99 56.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7c97d;
+      }
+
+      .cls-2 {
+        fill: #e19f00;
+      }
+
+      .cls-3 {
+        fill: #f5b82a;
+      }
+    </style>
+  </defs>
+  <g id="Queso">
+    <g>
+      <path class="cls-1" d="M70.98,31.16s-59.86.12-70.98,0C8.88,6.36,37.4,0,37.4,0l33.58,31.16Z"/>
+      <path class="cls-3" d="M62.06,44.59c0,4.19,3.4,7.6,7.6,7.6.46,0,.9-.04,1.33-.12v4.01h-19.01c-.76-3.4-3.79-5.94-7.41-5.94s-6.65,2.54-7.41,5.94H0v-24.91h70.99v5.94c-.43-.08-.88-.12-1.33-.12-4.2,0-7.6,3.4-7.6,7.6Z"/>
+      <g>
+        <ellipse class="cls-2" cx="17.39" cy="20.32" rx="4.38" ry="2.95"/>
+        <ellipse class="cls-2" cx="24.18" cy="16.32" rx="2.32" ry="1.57"/>
+      </g>
+      <g>
+        <ellipse class="cls-2" cx="51.55" cy="21.61" rx="4.38" ry="2.95"/>
+        <ellipse class="cls-2" cx="44.76" cy="25.61" rx="2.32" ry="1.57"/>
+      </g>
+      <ellipse class="cls-2" cx="14.56" cy="43.34" rx="5.45" ry="3.68"/>
+      <ellipse class="cls-2" cx="20.6" cy="48.52" rx="2.67" ry="1.8"/>
+      <ellipse class="cls-2" cx="18.32" cy="37.61" rx="1.76" ry="1.19"/>
+    </g>
+  </g>
+</svg>

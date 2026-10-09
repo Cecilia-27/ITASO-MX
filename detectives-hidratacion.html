@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef8fb">
+  <meta name="description" content="Juego educativo ITASO-MX para investigar bebidas y construir estrategias familiares de hidratación cotidiana.">
+  <title>Detectives de la hidratación | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2316556c'/%3E%3Cpath d='M32 12C22 26 18 31 18 40a14 14 0 0028 0c0-9-4-14-14-28Z' fill='%236ec5f8'/%3E%3Ccircle cx='28' cy='35' r='8' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='m34 41 9 9' stroke='%23ffd640' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body class="hydration-page" data-page="juegos">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" class="hydration-main" tabindex="-1">
+    <section class="hydration-view hydration-intro is-active" data-hydration-view="intro" aria-labelledby="hydration-title">
+      <div class="site-container hydration-intro-grid">
+        <div class="hydration-intro-copy">
+          <span class="section-kicker">HIDRATACIÓN</span>
+          <h1 id="hydration-title">Detectives de la hidratación</h1>
+          <p class="hydration-lead">Investiguen juntos qué bebidas pueden acompañarlos mejor durante el día y descubran nuevas pistas para mantenerse hidratados.</p>
+          <div class="hydration-intro-note">
+            <span class="hydration-mini-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="20" cy="20" r="11"></circle><path d="m28 28 11 11"></path></svg></span>
+            <p><strong>Una misión para conversar.</strong> Observen, comparen y elijan juntos; no se trata de aprobar un examen.</p>
+          </div>
+          <button class="button button-primary" type="button" data-hydration-action="start">Comenzar la investigación <span aria-hidden="true">→</span></button>
+        </div>
+
+        <div class="hydration-intro-art" aria-label="Persona cuidadora y niña investigando bebidas con lupas y frascos de colores">
+          <span class="hydration-art-blob" aria-hidden="true"></span>
+          <span class="hydration-art-trail" aria-hidden="true">···</span>
+          <img class="hydration-art-caregiver" src="assets/characters/mama lupa.svg" alt="Persona cuidadora investigando con una lupa">
+          <img class="hydration-art-child" src="assets/characters/niña lupa.svg" alt="Niña investigando con una lupa">
+          <img class="hydration-art-water" src="assets/foods/agua simple.svg" alt="Botella de agua simple ilustrada">
+          <img class="hydration-art-jar jar-blue" src="assets/jarrones/jarron azul.svg" alt="Frasco azul ilustrado">
+          <img class="hydration-art-jar jar-yellow" src="assets/jarrones/jarron amarillo.svg" alt="Frasco amarillo ilustrado">
+          <img class="hydration-art-jar jar-coral" src="assets/jarrones/jarron rojo.svg" alt="Frasco coral ilustrado">
+        </div>
+      </div>
+
+      <div class="site-container hydration-intro-benefits" aria-label="Etapas de la investigación">
+        <article><strong>1</strong><span>Observen las bebidas</span></article>
+        <article><strong>2</strong><span>Resuelvan situaciones</span></article>
+        <article><strong>3</strong><span>Elijan una misión familiar</span></article>
+      </div>
+    </section>
+
+    <section class="hydration-view hydration-step" data-hydration-view="mode" aria-labelledby="hydration-mode-title" hidden>
+      <div class="site-container hydration-step-shell">
+        <div class="hydration-toolbar">
+          <button class="back-button" type="button" data-hydration-action="back-intro"><span aria-hidden="true">←</span> Volver</button>
+          <a href="juegos.html">Salir del juego</a>
+        </div>
+        <div class="hydration-progress" aria-label="Paso 1 de 5"><span><i style="width:20%"></i></span><strong>Paso 1 de 5</strong></div>
+        <div class="hydration-step-heading">
+          <span class="section-kicker">PRIMERA PISTA</span>
+          <h2 id="hydration-mode-title" tabindex="-1">¿Cómo quieren investigar hoy?</h2>
+          <p>Elijan la forma de participar que se adapte mejor a este momento.</p>
+        </div>
+
+        <div class="hydration-mode-grid" role="radiogroup" aria-label="Modalidad de juego">
+          <button class="hydration-mode-card is-recommended" type="button" role="radio" aria-checked="false" data-hydration-mode="together">
+            <span class="hydration-mode-check" aria-hidden="true">✓</span>
+            <span class="hydration-mode-tag">RECOMENDADO</span>
+            <span class="hydration-mode-people" aria-hidden="true"><img src="assets/characters/mama.svg" alt=""><img src="assets/characters/nino.svg" alt=""></span>
+            <strong>Jugamos juntos</strong>
+            <small>Niña o niño participa y la persona cuidadora recibe pistas para acompañar.</small>
+          </button>
+          <button class="hydration-mode-card" type="button" role="radio" aria-checked="false" data-hydration-mode="child">
+            <span class="hydration-mode-check" aria-hidden="true">✓</span>
+            <span class="hydration-mode-people one" aria-hidden="true"><img src="assets/characters/nino.svg" alt=""></span>
+            <strong>Soy niña o niño</strong>
+            <small>Una actividad visual con explicaciones breves y sencillas.</small>
+          </button>
+          <button class="hydration-mode-card" type="button" role="radio" aria-checked="false" data-hydration-mode="caregiver">
+            <span class="hydration-mode-check" aria-hidden="true">✓</span>
+            <span class="hydration-mode-people one" aria-hidden="true"><img src="assets/characters/papa.svg" alt=""></span>
+            <strong>Soy persona cuidadora</strong>
+            <small>Más contexto y herramientas para acompañar la conversación.</small>
+          </button>
+        </div>
+
+        <div class="hydration-step-actions">
+          <button class="button button-secondary" type="button" data-hydration-action="back-intro"><span aria-hidden="true">←</span> Volver</button>
+          <button class="button button-primary" id="hydration-mode-next" type="button" data-hydration-action="next-classify" disabled>Continuar <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hydration-view hydration-step" data-hydration-view="classify" aria-labelledby="hydration-classify-title" hidden>
+      <div class="site-container hydration-step-shell">
+        <div class="hydration-toolbar">
+          <button class="back-button" type="button" data-hydration-action="back-mode"><span aria-hidden="true">←</span> Volver</button>
+          <a href="juegos.html">Salir del juego</a>
+        </div>
+        <div class="hydration-progress" aria-label="Paso 2 de 5"><span><i style="width:40%"></i></span><strong>Paso 2 de 5</strong></div>
+        <div class="hydration-step-heading compact">
+          <span class="section-kicker">LABORATORIO DE PISTAS</span>
+          <h2 id="hydration-classify-title" tabindex="-1">Observa y clasifica las bebidas</h2>
+          <p>Selecciona una bebida para investigarla. Después colócala en un frasco arrastrándola o tocando el frasco.</p>
+        </div>
+
+        <div class="hydration-case-counter" data-hydration-case-counter aria-live="polite">Caso 1 de 4</div>
+        <div class="hydration-beverage-list" data-hydration-beverages role="list" aria-label="Bebidas para investigar"></div>
+
+        <div class="hydration-lab-layout">
+          <article class="hydration-clue-card" data-hydration-clue aria-live="polite"></article>
+
+          <div class="hydration-jars" role="group" aria-label="Clasificar la bebida seleccionada">
+            <button class="hydration-jar-card jar-hydrate" type="button" data-hydration-jar="hydrate">
+              <span class="hydration-jar-check" aria-hidden="true">✓</span>
+              <img src="assets/jarrones/jarron azul.svg" alt="Frasco azul">
+              <strong>Para hidratarme</strong>
+              <small>Opción principal durante el día</small>
+            </button>
+            <button class="hydration-jar-card jar-sometimes" type="button" data-hydration-jar="sometimes">
+              <span class="hydration-jar-check" aria-hidden="true">✓</span>
+              <img src="assets/jarrones/jarron amarillo.svg" alt="Frasco amarillo">
+              <strong>Para disfrutar algunas veces</strong>
+              <small>Puede acompañar ciertos momentos</small>
+            </button>
+            <button class="hydration-jar-card jar-limit" type="button" data-hydration-jar="limit">
+              <span class="hydration-jar-check" aria-hidden="true">✓</span>
+              <img src="assets/jarrones/jarron rojo.svg" alt="Frasco coral">
+              <strong>Para limitar o consumir ocasionalmente</strong>
+              <small>Conviene observar con más atención</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="hydration-feedback" data-hydration-feedback role="status" aria-live="polite" hidden></div>
+
+        <div class="hydration-step-actions">
+          <button class="button button-secondary" type="button" data-hydration-action="back-mode"><span aria-hidden="true">←</span> Volver</button>
+          <button class="button button-primary" id="hydration-classify-next" type="button" data-hydration-action="next-cases" disabled>Resolver situaciones <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hydration-view hydration-step" data-hydration-view="cases" aria-labelledby="hydration-cases-title" hidden>
+      <div class="site-container hydration-step-shell">
+        <div class="hydration-toolbar">
+          <button class="back-button" type="button" data-hydration-action="back-classify"><span aria-hidden="true">←</span> Volver</button>
+          <a href="juegos.html">Salir del juego</a>
+        </div>
+        <div class="hydration-progress" aria-label="Paso 3 de 5"><span><i style="width:60%"></i></span><strong>Paso 3 de 5</strong></div>
+        <div class="hydration-step-heading compact">
+          <span class="section-kicker">RESUELVE EL CASO</span>
+          <h2 id="hydration-cases-title" tabindex="-1">¿Qué elegirías en esta situación?</h2>
+          <p>Conversen y elijan una opción. Cada situación puede necesitar una estrategia distinta.</p>
+        </div>
+        <article class="hydration-situation" data-hydration-situation aria-live="polite"></article>
+        <div class="hydration-step-actions">
+          <button class="button button-secondary" type="button" data-hydration-action="back-classify"><span aria-hidden="true">←</span> Volver</button>
+          <button class="button button-primary" id="hydration-cases-next" type="button" data-hydration-action="next-moments" disabled>Encontrar momentos del día <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hydration-view hydration-step" data-hydration-view="moments" aria-labelledby="hydration-moments-title" hidden>
+      <div class="site-container hydration-step-shell">
+        <div class="hydration-toolbar">
+          <button class="back-button" type="button" data-hydration-action="back-cases"><span aria-hidden="true">←</span> Volver</button>
+          <a href="juegos.html">Salir del juego</a>
+        </div>
+        <div class="hydration-progress" aria-label="Paso 4 de 5"><span><i style="width:80%"></i></span><strong>Paso 4 de 5</strong></div>
+        <div class="hydration-step-heading">
+          <span class="section-kicker">UN DÍA HIDRATADO</span>
+          <h2 id="hydration-moments-title" tabindex="-1">Encuentra momentos para recordar el agua</h2>
+          <p>Elige al menos tres momentos que podrían funcionar dentro de su rutina. No necesitas escribir horarios.</p>
+        </div>
+
+        <div class="hydration-moments-grid" role="group" aria-label="Momentos del día">
+          <button type="button" data-hydration-moment="despertar" aria-pressed="false"><span aria-hidden="true">01</span><strong>Al despertar</strong><i aria-hidden="true">✓</i></button>
+          <button type="button" data-hydration-moment="desayuno" aria-pressed="false"><span aria-hidden="true">02</span><strong>Desayuno</strong><i aria-hidden="true">✓</i></button>
+          <button type="button" data-hydration-moment="escuela" aria-pressed="false"><span aria-hidden="true">03</span><strong>Escuela</strong><i aria-hidden="true">✓</i></button>
+          <button type="button" data-hydration-moment="comida" aria-pressed="false"><span aria-hidden="true">04</span><strong>Comida</strong><i aria-hidden="true">✓</i></button>
+          <button type="button" data-hydration-moment="juego" aria-pressed="false"><span aria-hidden="true">05</span><strong>Después de jugar</strong><i aria-hidden="true">✓</i></button>
+          <button type="button" data-hydration-moment="noche" aria-pressed="false"><span aria-hidden="true">06</span><strong>Noche</strong><i aria-hidden="true">✓</i></button>
+        </div>
+        <div class="hydration-selection-message" data-hydration-moment-message role="status" aria-live="polite">Selecciona al menos tres momentos.</div>
+
+        <aside class="hydration-flexible-note">
+          <img src="assets/foods/agua simple.svg" alt="Botella de agua simple ilustrada">
+          <div><h3>¡Ya encontraron varias oportunidades!</h3><p>No se trata de hacerlo perfecto. Tener agua disponible en distintos momentos puede facilitar que forme parte de la rutina.</p></div>
+        </aside>
+
+        <div class="hydration-step-actions">
+          <button class="button button-secondary" type="button" data-hydration-action="back-cases"><span aria-hidden="true">←</span> Volver</button>
+          <button class="button button-primary" id="hydration-moments-next" type="button" data-hydration-action="next-missions" disabled>Elegir una misión <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hydration-view hydration-step" data-hydration-view="missions" aria-labelledby="hydration-missions-title" hidden>
+      <div class="site-container hydration-step-shell">
+        <div class="hydration-toolbar">
+          <button class="back-button" type="button" data-hydration-action="back-moments"><span aria-hidden="true">←</span> Volver</button>
+          <a href="juegos.html">Salir del juego</a>
+        </div>
+        <div class="hydration-progress" aria-label="Paso 5 de 5"><span><i style="width:100%"></i></span><strong>Paso 5 de 5</strong></div>
+        <div class="hydration-step-heading">
+          <span class="section-kicker">RETO EN FAMILIA</span>
+          <h2 id="hydration-missions-title" tabindex="-1">Elijan una misión para esta semana</h2>
+          <p>Pueden elegir una o dos. La niña o el niño propone y la persona cuidadora confirma cómo intentarla juntos.</p>
+        </div>
+
+        <div class="hydration-missions-grid" role="group" aria-label="Misiones familiares">
+          <button type="button" data-hydration-mission="salir" aria-pressed="false">
+            <span class="hydration-mission-number">MISIÓN 1</span><img src="assets/foods/agua simple.svg" alt="Botella de agua ilustrada"><strong>Llevar una botella de agua cuando salgamos.</strong><i aria-hidden="true">✓ Misión elegida</i>
+          </button>
+          <button type="button" data-hydration-mission="comidas" aria-pressed="false">
+            <span class="hydration-mission-number">MISIÓN 2</span><img src="assets/foods/vaso simple.svg" alt="Vaso de agua ilustrado"><strong>Poner agua disponible durante las comidas.</strong><i aria-hidden="true">✓ Misión elegida</i>
+          </button>
+          <button type="button" data-hydration-mission="escuela" aria-pressed="false">
+            <span class="hydration-mission-number">MISIÓN 3</span><img src="assets/lunchboxes/azul.svg" alt="Lunchera azul ilustrada"><strong>Preparar la botella antes de ir a la escuela.</strong><i aria-hidden="true">✓ Misión elegida</i>
+          </button>
+        </div>
+        <div class="hydration-conversation-prompt"><strong>Pregunta para conversar</strong><p>¿Cuál de estas misiones creen que sería más fácil intentar juntos?</p></div>
+        <p class="hydration-selection-message" data-hydration-mission-message role="status" aria-live="polite">Elijan una o dos misiones.</p>
+
+        <div class="hydration-step-actions">
+          <button class="button button-secondary" type="button" data-hydration-action="back-moments"><span aria-hidden="true">←</span> Volver</button>
+          <button class="button button-primary" id="hydration-missions-next" type="button" data-hydration-action="finish" disabled>Resolver el caso <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hydration-view hydration-complete" data-hydration-view="complete" aria-labelledby="hydration-complete-title" hidden>
+      <div class="site-container hydration-complete-grid">
+        <div class="hydration-complete-copy">
+          <span class="section-kicker">CASO RESUELTO</span>
+          <h2 id="hydration-complete-title" tabindex="-1">¡Caso resuelto!</h2>
+          <p class="hydration-lead">Ya descubrieron nuevas pistas para acompañar la hidratación durante el día.</p>
+          <ul class="hydration-complete-list">
+            <li>Investigamos bebidas</li>
+            <li>Resolvimos situaciones</li>
+            <li>Encontramos momentos del día</li>
+            <li>Elegimos una misión en familia</li>
+          </ul>
+          <button class="button button-secondary hydration-save-button" type="button" data-save-hydration aria-pressed="false">♡ Guardar actividad</button>
+        </div>
+
+        <div class="hydration-badge-card">
+          <span class="hydration-badge-rays" aria-hidden="true"></span>
+          <div class="hydration-badge-medal"><img src="assets/jarrones/jarron azul.svg" alt="Frasco azul de la insignia Detective de la hidratación"></div>
+          <span>INSIGNIA</span>
+          <strong>Detective de la hidratación</strong>
+        </div>
+      </div>
+
+      <div class="site-container hydration-remember-panel">
+        <div><span class="section-kicker">PARA RECORDAR</span><h3>Tres pistas para continuar</h3></div>
+        <ol>
+          <li><strong>Mantén agua disponible</strong><span>y fácil de encontrar.</span></li>
+          <li><strong>Acompaña las elecciones</strong><span>sin convertirlas en castigos o prohibiciones.</span></li>
+          <li><strong>Construyan pequeñas rutinas</strong><span>que puedan repetir en familia.</span></li>
+        </ol>
+      </div>
+
+      <div class="site-container hydration-complete-actions">
+        <a class="button button-primary" href="juegos.html">Volver a Juegos <span aria-hidden="true">→</span></a>
+        <button class="button button-secondary" type="button" data-hydration-action="restart">Jugar de nuevo</button>
+        <a class="button button-tertiary" href="recursos.html#hidratacion">Ver recursos de hidratación <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog">
+      <button class="dialog-close" value="close" aria-label="Cerrar búsqueda">×</button>
+      <span class="eyebrow eyebrow-blue">BUSCAR EN ITASO</span>
+      <h2 id="search-title">¿Qué quieres explorar?</h2>
+      <label for="site-search">Buscar recursos, juegos o noticias</label>
+      <div class="search-row"><input id="site-search" type="search" placeholder="Escribe una palabra"><button class="button button-primary" value="search">Buscar</button></div>
+    </form>
+  </dialog>
+
+  <dialog class="auth-dialog hydration-save-dialog" id="hydration-save-dialog" aria-labelledby="hydration-save-title">
+    <div class="auth-dialog-card">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar mensaje">×</button>
+      <span class="resource-dialog-symbol" aria-hidden="true">♡</span>
+      <h2 id="hydration-save-title">Inicia sesión para guardar esta actividad</h2>
+      <p>Así podrás encontrar “Detectives de la hidratación” fácilmente desde tu perfil.</p>
+      <div class="resource-dialog-actions">
+        <a class="button button-primary" href="iniciar-sesion.html?returnTo=detectives-hidratacion.html">Iniciar sesión</a>
+        <button class="button button-secondary" type="button" data-dialog-close>Seguir explorando</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

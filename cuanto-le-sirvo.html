@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Interactivo ITASO-MX para conocer referencias visuales de porciones mediante las manos y un plato ilustrado.">
+  <title>¿Cuánto le sirvo? | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23075c36'/%3E%3Ccircle cx='32' cy='34' r='18' fill='%23fff9e8' stroke='%23ef8791' stroke-width='4'/%3E%3Cpath d='M32 16v36M14 34h36' stroke='%23f6c94a' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body class="portion-page" data-page="juegos">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" class="portion-main" tabindex="-1">
+    <section class="portion-screen portion-intro is-active" id="portion-intro" data-portion-view="intro" aria-labelledby="portion-intro-title">
+      <div class="portion-intro-grid">
+        <div class="portion-intro-copy">
+          <span class="eyebrow"><span aria-hidden="true">✦</span> JUEGO</span>
+          <h1 id="portion-intro-title">¿Cuánto <span>le sirvo?</span></h1>
+          <p class="portion-lead">Descubre una forma visual y sencilla de reconocer porciones utilizando las manos como referencia.</p>
+          <div class="portion-notice">
+            <span aria-hidden="true">i</span>
+            <p>Las porciones pueden variar según la edad, el apetito, la actividad y las necesidades de cada niña o niño.</p>
+          </div>
+          <button class="button button-primary" type="button" data-portion-action="start">Comenzar <span aria-hidden="true">→</span></button>
+        </div>
+
+        <div class="portion-intro-art" aria-label="Especialista ITASO sosteniendo un plato junto a referencias visuales de porciones">
+          <span class="portion-art-blob" aria-hidden="true"></span>
+          <span class="portion-art-sun" aria-hidden="true"></span>
+          <span class="portion-art-star" aria-hidden="true">✦</span>
+          <img class="portion-art-specialist" src="assets/characters/_1Recurso 41especialista plato.svg" alt="Especialista ITASO sosteniendo un plato">
+          <img class="portion-art-plate" src="assets/plate/plato dividido.svg" alt="Plato dividido ilustrado">
+          <img class="portion-art-hand" src="assets/hands/mano abierta.svg" alt="Mano abierta ilustrada">
+        </div>
+      </div>
+
+      <div class="portion-benefits" aria-label="Lo que podrás hacer">
+        <article><span aria-hidden="true">✋</span><p>Usa referencias fáciles de recordar</p></article>
+        <article><span aria-hidden="true">↔</span><p>Compara distintos grupos de alimentos</p></article>
+        <article><span aria-hidden="true">⌂</span><p>Llévalo a situaciones cotidianas</p></article>
+      </div>
+    </section>
+
+    <section class="portion-screen portion-step" id="portion-age" data-portion-view="age" aria-labelledby="portion-age-title" hidden>
+      <div class="portion-toolbar">
+        <button class="back-button" type="button" data-portion-action="back-intro"><span aria-hidden="true">←</span> Volver</button>
+        <a class="portion-exit-link" href="juegos.html">Salir del juego</a>
+      </div>
+      <div class="portion-progress" aria-label="Paso 1 de 3">
+        <div aria-hidden="true"><span style="width: 33.333%"></span></div>
+        <strong>Paso 1 de 3</strong>
+      </div>
+
+      <div class="portion-step-heading">
+        <span class="section-kicker">PRIMERO</span>
+        <h2 id="portion-age-title" tabindex="-1">¿Qué edad tiene tu hijo/a?</h2>
+        <p>Selecciona un rango de edad para consultar la guía visual.</p>
+      </div>
+
+      <div class="portion-age-layout">
+        <div class="portion-age-options" role="radiogroup" aria-label="Rango de edad">
+          <button class="portion-age-card tone-yellow" type="button" role="radio" aria-checked="false" data-portion-age="6–8 años">
+            <span class="portion-choice-check" aria-hidden="true">✓</span>
+            <small>INFANCIA</small>
+            <strong>6–8 años</strong>
+            <span>Consultar esta guía</span>
+          </button>
+          <button class="portion-age-card tone-coral" type="button" role="radio" aria-checked="false" data-portion-age="9–12 años">
+            <span class="portion-choice-check" aria-hidden="true">✓</span>
+            <small>INFANCIA</small>
+            <strong>9–12 años</strong>
+            <span>Consultar esta guía</span>
+          </button>
+          <button class="portion-age-card tone-blue" type="button" role="radio" aria-checked="false" data-portion-age="13+ años">
+            <span class="portion-choice-check" aria-hidden="true">✓</span>
+            <small>ADOLESCENCIA</small>
+            <strong>13+ años</strong>
+            <span>Consultar esta guía</span>
+          </button>
+        </div>
+
+        <aside class="portion-age-companion">
+          <span aria-hidden="true"></span>
+          <img src="assets/characters/nino.svg" alt="Personaje infantil ITASO">
+          <p><strong>Una guía flexible.</strong> La edad es sólo un punto de partida; también puedes observar su apetito.</p>
+        </aside>
+      </div>
+
+      <div class="portion-step-actions">
+        <button class="button button-secondary" type="button" data-portion-action="back-intro"><span aria-hidden="true">←</span> Volver</button>
+        <button class="button button-primary" id="portion-age-next" type="button" data-portion-action="next-hands" disabled>Continuar <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="portion-screen portion-step" id="portion-hands" data-portion-view="hands" aria-labelledby="portion-hands-title" hidden>
+      <div class="portion-toolbar">
+        <button class="back-button" type="button" data-portion-action="back-age"><span aria-hidden="true">←</span> Volver</button>
+        <a class="portion-exit-link" href="juegos.html">Salir del juego</a>
+      </div>
+      <div class="portion-progress" aria-label="Paso 2 de 3">
+        <div aria-hidden="true"><span style="width: 66.666%"></span></div>
+        <strong>Paso 2 de 3</strong>
+      </div>
+
+      <div class="portion-step-heading">
+        <span class="section-kicker">REFERENCIA VISUAL</span>
+        <h2 id="portion-hands-title" tabindex="-1">Usa tus manos como guía</h2>
+        <p>Las manos pueden ayudarte a visualizar algunas porciones sin necesitar medir cada alimento.</p>
+        <small>Úsalas como referencia visual, no como una medida exacta.</small>
+      </div>
+
+      <div class="portion-selected-age" id="portion-selected-age" aria-live="polite"></div>
+      <nav class="portion-group-tabs" data-portion-group-tabs aria-label="Grupos de alimentos"></nav>
+      <article class="portion-hand-detail" data-portion-hand-detail aria-live="polite"></article>
+
+      <div class="portion-step-actions">
+        <button class="button button-secondary" type="button" data-portion-action="back-age"><span aria-hidden="true">←</span> Volver</button>
+        <button class="button button-primary" type="button" data-portion-action="next-plate">Ver cómo llevarlo al plato <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="portion-screen portion-step" id="portion-plate" data-portion-view="plate" aria-labelledby="portion-plate-title" hidden>
+      <div class="portion-toolbar">
+        <button class="back-button" type="button" data-portion-action="back-hands"><span aria-hidden="true">←</span> Volver</button>
+        <a class="portion-exit-link" href="juegos.html">Salir del juego</a>
+      </div>
+      <div class="portion-progress" aria-label="Paso 3 de 3">
+        <div aria-hidden="true"><span style="width: 100%"></span></div>
+        <strong>Paso 3 de 3</strong>
+      </div>
+
+      <div class="portion-step-heading">
+        <span class="section-kicker">UNA COMIDA COTIDIANA</span>
+        <h2 id="portion-plate-title" tabindex="-1">Llévalo a tu plato</h2>
+        <p>Ahora observa cómo los distintos grupos pueden convivir dentro de una misma comida.</p>
+      </div>
+
+      <div class="portion-plate-layout">
+        <div class="portion-plate-visual">
+          <span class="portion-plate-blob" aria-hidden="true"></span>
+          <div class="portion-plate-stage">
+            <img src="assets/plate/plato dividido.svg" alt="Plato ilustrado dividido en tres áreas para verduras, cereales y proteínas">
+            <div class="portion-plate-food-layers" data-portion-plate-foods aria-hidden="true"></div>
+          </div>
+          <div class="portion-water-reference">
+            <span class="portion-water-glass" aria-hidden="true"><i></i></span>
+            <strong>Agua simple</strong>
+          </div>
+        </div>
+
+        <div class="portion-plate-panel">
+          <h3>Explora cada grupo</h3>
+          <div class="portion-plate-tabs" data-portion-plate-tabs role="group" aria-label="Grupos dentro del plato"></div>
+          <div class="portion-plate-examples" data-portion-plate-examples aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="portion-companion-groups">
+        <article class="companion-fruit">
+          <img src="assets/hands/mano en copa.svg" alt="Manos en forma de copa">
+          <div><span>FRUTAS</span><p>Puedes incorporarlas según la comida y la rutina.</p></div>
+        </article>
+        <article class="companion-fat">
+          <img src="assets/hands/pulgar.svg" alt="Pulgar ilustrado">
+          <div><span>GRASAS SALUDABLES</span><p>Pueden formar parte de distintas preparaciones.</p></div>
+        </article>
+      </div>
+
+      <aside class="portion-remember">
+        <span aria-hidden="true">✦</span>
+        <div>
+          <h3>Recuerda</h3>
+          <p>La guía te ayuda a visualizar cantidades, pero no necesitas servir exactamente lo mismo todos los días. El apetito, la actividad y las necesidades pueden cambiar.</p>
+        </div>
+      </aside>
+
+      <div class="portion-step-actions">
+        <button class="button button-secondary" type="button" data-portion-action="back-hands"><span aria-hidden="true">←</span> Volver</button>
+        <button class="button button-primary" type="button" data-portion-action="finish">Terminar <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="portion-screen portion-complete" id="portion-complete" data-portion-view="complete" aria-labelledby="portion-complete-title" hidden>
+      <div class="portion-complete-art" aria-hidden="true">
+        <span></span>
+        <img src="assets/characters/especialista.svg" alt="">
+        <img src="assets/hands/mano abierta.svg" alt="">
+      </div>
+      <span class="eyebrow eyebrow-blue">GUÍA COMPLETADA</span>
+      <h2 id="portion-complete-title" tabindex="-1">¡Lo tienes!</h2>
+      <p>Ahora tienes una referencia visual para acompañar las porciones de una forma más sencilla.</p>
+
+      <div class="portion-reminders">
+        <article><span aria-hidden="true">✋</span><strong>Usa las manos como guía</strong></article>
+        <article><span aria-hidden="true">♡</span><strong>Observa su apetito</strong></article>
+        <article><span aria-hidden="true">⌂</span><strong>Adapta los alimentos a lo que tienen en casa</strong></article>
+      </div>
+
+      <button class="button button-secondary portion-save-button" type="button" data-save-portion-guide aria-pressed="false">♡ Guardar esta guía</button>
+      <div class="portion-complete-actions">
+        <a class="button button-primary" href="juegos.html">Volver a Juegos <span aria-hidden="true">→</span></a>
+        <a class="button button-secondary" href="recursos.html#porciones">Explorar recursos sobre porciones</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog">
+      <button class="dialog-close" value="close" aria-label="Cerrar búsqueda">×</button>
+      <span class="eyebrow eyebrow-blue">BUSCAR EN ITASO</span>
+      <h2 id="search-title">¿Qué quieres explorar?</h2>
+      <label for="site-search">Buscar recursos, juegos o noticias</label>
+      <div class="search-row">
+        <input id="site-search" type="search" placeholder="Escribe una palabra">
+        <button class="button button-primary" value="search">Buscar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="auth-dialog portion-save-dialog" id="portion-save-dialog" aria-labelledby="portion-save-title">
+    <div class="auth-dialog-card">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar mensaje">×</button>
+      <span class="resource-dialog-symbol" aria-hidden="true">♡</span>
+      <h2 id="portion-save-title">Inicia sesión para guardar este recurso</h2>
+      <p>Así podrás encontrar “¿Cuánto le sirvo?” fácilmente desde tu perfil.</p>
+      <div class="resource-dialog-actions">
+        <a class="button button-primary" href="iniciar-sesion.html?returnTo=cuanto-le-sirvo.html">Iniciar sesión</a>
+        <button class="button button-secondary" type="button" data-dialog-close>Seguir explorando</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Tu perfil de persona cuidadora en ITASO-MX: recursos, actividades y preferencias en un solo lugar.">
+  <title>Mi perfil | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23075c36'/%3E%3Cpath d='M18 25h28v23H18z' rx='6' fill='%236ec5f8'/%3E%3Cpath d='M25 25v-4a7 7 0 0114 0v4' fill='none' stroke='%23ffd640' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='36' r='4' fill='%23eb7a8a'/%3E%3Cpath d='M35 34h7M35 39h5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body class="profile-page" data-page="profile">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" class="profile-main" tabindex="-1">
+    <section class="site-container profile-shell" aria-labelledby="profile-title">
+      <div class="profile-heading">
+        <div>
+          <span class="section-kicker">MI PERFIL</span>
+          <h1 id="profile-title">Hola, <span data-profile-name>Laura</span></h1>
+          <p>Tu espacio para guardar recursos, continuar actividades y encontrar más fácilmente lo que necesitas.</p>
+        </div>
+        <button class="profile-menu-trigger" type="button" data-profile-menu-open aria-expanded="false" aria-controls="profile-account-nav">
+          <span aria-hidden="true">☰</span> Cuenta
+        </button>
+      </div>
+
+      <div class="profile-layout">
+        <aside class="profile-sidebar" aria-label="Resumen del perfil">
+          <section class="profile-identity-card" aria-labelledby="caregiver-name">
+            <span class="profile-doodle profile-doodle-star" aria-hidden="true">✦</span>
+            <span class="profile-doodle profile-doodle-dots" aria-hidden="true">• • •</span>
+            <div class="profile-avatar profile-avatar-mama" data-profile-avatar></div>
+            <h2 id="caregiver-name" data-profile-card-name>Laura</h2>
+            <p class="profile-role" data-profile-type>Persona cuidadora</p>
+
+            <div class="profile-primary-actions">
+              <button class="button button-primary" type="button" data-avatar-dialog-open>Cambiar personaje</button>
+              <button class="button button-secondary" type="button" data-profile-dialog-open>Editar perfil</button>
+            </div>
+
+            <dl class="profile-facts">
+              <div>
+                <dt>Tipo de acompañamiento</dt>
+                <dd data-profile-caregiver>Mamá</dd>
+              </div>
+              <div>
+                <dt>Rango de edad que acompaño</dt>
+                <dd data-profile-age>9–12 años</dd>
+              </div>
+              <div>
+                <dt>Temas que me interesan</dt>
+                <dd data-profile-interest-summary>Lunch, Porciones y Alimentación variada</dd>
+              </div>
+            </dl>
+            <span class="prototype-profile-note">Información de demostración</span>
+          </section>
+
+          <div class="profile-drawer-backdrop" data-profile-menu-close hidden></div>
+          <nav class="profile-account-nav" id="profile-account-nav" aria-label="Opciones de Mi cuenta" aria-hidden="true">
+            <div class="profile-account-nav-heading">
+              <div>
+                <span>MI CUENTA</span>
+                <strong data-profile-menu-name>Laura</strong>
+              </div>
+              <button type="button" data-profile-menu-close aria-label="Cerrar menú de cuenta">×</button>
+            </div>
+            <button class="is-current" type="button" data-profile-tab-target="resources"><span aria-hidden="true">◉</span> Mi perfil</button>
+            <button type="button" data-profile-tab-target="resources"><span aria-hidden="true">♡</span> Recursos guardados</button>
+            <button type="button" data-profile-tab-target="activity"><span aria-hidden="true">◷</span> Actividad reciente</button>
+            <button type="button" data-profile-tab-target="preferences"><span aria-hidden="true">⚙</span> Preferencias</button>
+            <a href="#profile-subscription" data-profile-subscription-link><span aria-hidden="true">✦</span> Mi suscripción</a>
+            <a href="conoce-itaso.html#participa"><span aria-hidden="true">?</span> Ayuda</a>
+            <button class="profile-logout" type="button" data-action="request-logout"><span aria-hidden="true">↪</span> Cerrar sesión</button>
+          </nav>
+        </aside>
+
+        <div class="profile-content">
+          <section class="profile-subscription-summary" id="profile-subscription" data-profile-subscription aria-labelledby="profile-subscription-title"></section>
+
+          <div class="profile-tabs" role="tablist" aria-label="Contenido del perfil">
+            <button id="tab-resources" type="button" role="tab" aria-selected="true" aria-controls="panel-resources" data-profile-tab="resources">Mis recursos</button>
+            <button id="tab-activity" type="button" role="tab" aria-selected="false" aria-controls="panel-activity" data-profile-tab="activity" tabindex="-1">Actividad reciente</button>
+            <button id="tab-preferences" type="button" role="tab" aria-selected="false" aria-controls="panel-preferences" data-profile-tab="preferences" tabindex="-1">Mis preferencias</button>
+          </div>
+
+          <section class="profile-panel" id="panel-resources" role="tabpanel" aria-labelledby="tab-resources" data-profile-panel="resources">
+            <div class="profile-section-heading">
+              <div>
+                <span class="profile-section-icon icon-pink" aria-hidden="true">♡</span>
+                <h2>Mis recursos guardados</h2>
+              </div>
+              <p>Aquí puedes encontrar las ideas y materiales que decidiste guardar.</p>
+            </div>
+            <div class="profile-card-grid" data-saved-resources></div>
+          </section>
+
+          <section class="profile-panel" id="panel-activity" role="tabpanel" aria-labelledby="tab-activity" data-profile-panel="activity" hidden>
+            <div class="profile-section-heading">
+              <div>
+                <span class="profile-section-icon icon-blue" aria-hidden="true">◷</span>
+                <h2>Continúa donde te quedaste</h2>
+              </div>
+              <p>Retoma una actividad cuando tengas un momento. No hay puntuaciones ni presión.</p>
+            </div>
+            <div class="profile-card-grid" data-recent-activities></div>
+          </section>
+
+          <section class="profile-panel" id="panel-preferences" role="tabpanel" aria-labelledby="tab-preferences" data-profile-panel="preferences" hidden>
+            <div class="profile-section-heading">
+              <div>
+                <span class="profile-section-icon icon-yellow" aria-hidden="true">✦</span>
+                <h2>Lo que te interesa explorar</h2>
+              </div>
+              <p>Usamos estas preferencias sencillas para que encuentres más rápido contenidos relevantes.</p>
+            </div>
+            <div class="preferences-card">
+              <div class="interest-chips" data-interest-chips></div>
+              <button class="button button-secondary" type="button" data-profile-dialog-open>Editar intereses</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="profile-dialog avatar-dialog" id="avatar-dialog" aria-labelledby="avatar-dialog-title">
+    <form class="profile-dialog-card" id="avatar-form">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar selector de personaje">×</button>
+      <span class="section-kicker">TU PERSONAJE</span>
+      <h2 id="avatar-dialog-title">Elige tu personaje</h2>
+      <p>Selecciona el personaje con el que quieres identificar tu perfil. Puedes cambiarlo después.</p>
+
+      <fieldset class="avatar-options">
+        <legend class="visually-hidden">Personajes disponibles</legend>
+        <label class="avatar-option avatar-option-mama">
+          <input type="radio" name="avatar" value="mama">
+          <span class="avatar-option-art"><img src="assets/characters/mama.svg" alt="Personaje mamá ITASO"></span>
+          <strong>Mamá</strong>
+          <span class="avatar-check" aria-hidden="true">✓</span>
+        </label>
+        <label class="avatar-option avatar-option-papa">
+          <input type="radio" name="avatar" value="papa">
+          <span class="avatar-option-art"><img src="assets/characters/papa.svg" alt="Personaje papá ITASO"></span>
+          <strong>Papá</strong>
+          <span class="avatar-check" aria-hidden="true">✓</span>
+        </label>
+        <label class="avatar-option avatar-option-abuela">
+          <input type="radio" name="avatar" value="abuela">
+          <span class="avatar-option-art"><img src="assets/characters/abuela.svg" alt="Personaje abuela ITASO"></span>
+          <strong>Abuela</strong>
+          <span class="avatar-check" aria-hidden="true">✓</span>
+        </label>
+        <label class="avatar-option avatar-option-other">
+          <input type="radio" name="avatar" value="otro">
+          <span class="avatar-option-art avatar-other-art" aria-hidden="true">
+            <img src="assets/characters/mama.svg" alt="">
+            <img src="assets/characters/papa.svg" alt="">
+          </span>
+          <strong>Otro cuidador/a</strong>
+          <span class="avatar-check" aria-hidden="true">✓</span>
+        </label>
+      </fieldset>
+
+      <div class="profile-dialog-actions">
+        <button class="button button-secondary" type="button" data-dialog-close>Cancelar</button>
+        <button class="button button-primary profile-dialog-submit" type="submit">Guardar personaje <span aria-hidden="true">→</span></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="profile-dialog edit-profile-dialog" id="edit-profile-dialog" aria-labelledby="edit-profile-title">
+    <form class="profile-dialog-card" id="profile-form">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar edición de perfil">×</button>
+      <span class="section-kicker">PREFERENCIAS BÁSICAS</span>
+      <h2 id="edit-profile-title">Editar perfil</h2>
+      <p>Este prototipo guarda sólo preferencias simples en tu navegador.</p>
+
+      <div class="profile-form-field">
+        <label for="profile-name-input">Nombre</label>
+        <input class="form-control" id="profile-name-input" name="name" type="text" maxlength="40" autocomplete="name" required>
+      </div>
+
+      <div class="profile-form-grid">
+        <div class="profile-form-field">
+          <label for="caregiver-type-input">Tipo de cuidador</label>
+          <select class="form-control" id="caregiver-type-input" name="caregiverType" required>
+            <option>Mamá</option>
+            <option>Papá</option>
+            <option>Abuela</option>
+            <option>Abuelo</option>
+            <option>Otro cuidador</option>
+            <option>Otra cuidadora</option>
+          </select>
+        </div>
+
+        <div class="profile-form-field">
+          <label for="age-range-input">Rango de edad que acompaño</label>
+          <select class="form-control" id="age-range-input" name="ageRange" required>
+            <option value="6-8">6–8 años</option>
+            <option value="9-12">9–12 años</option>
+            <option value="13+">13+ años</option>
+          </select>
+        </div>
+      </div>
+
+      <fieldset class="interest-options">
+        <legend>Temas de interés</legend>
+        <label><input type="checkbox" name="interests" value="Lunch"> <span>Lunch</span></label>
+        <label><input type="checkbox" name="interests" value="Porciones"> <span>Porciones</span></label>
+        <label><input type="checkbox" name="interests" value="Alimentación variada"> <span>Alimentación variada</span></label>
+        <label><input type="checkbox" name="interests" value="Hidratación"> <span>Hidratación</span></label>
+        <label><input type="checkbox" name="interests" value="Movimiento"> <span>Movimiento</span></label>
+        <label><input type="checkbox" name="interests" value="Descanso"> <span>Descanso</span></label>
+      </fieldset>
+
+      <p class="profile-form-status" data-profile-form-status role="status" aria-live="polite"></p>
+      <button class="button button-primary profile-dialog-submit" type="submit">Guardar cambios</button>
+    </form>
+  </dialog>
+
+  <dialog class="profile-dialog subscription-cancel-dialog" id="subscription-cancel-dialog" aria-labelledby="subscription-cancel-title">
+    <div class="profile-dialog-card">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar confirmación">×</button>
+      <span class="section-kicker">MI SUSCRIPCIÓN</span>
+      <h2 id="subscription-cancel-title">¿Cancelar la suscripción?</h2>
+      <p>Esta acción sólo cambia el estado de la simulación guardada en este navegador.</p>
+      <div class="logout-dialog-actions">
+        <button class="button button-secondary" type="button" data-dialog-close>Conservar suscripción</button>
+        <button class="button button-primary logout-confirm" type="button" data-confirm-cancel-subscription>Cancelar suscripción</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog">
+      <button class="dialog-close" value="close" aria-label="Cerrar búsqueda">×</button>
+      <span class="eyebrow eyebrow-blue">BUSCAR EN ITASO</span>
+      <h2 id="search-title">¿Qué quieres explorar?</h2>
+      <label for="site-search">Buscar recursos, juegos o noticias</label>
+      <div class="search-row">
+        <input id="site-search" type="search" placeholder="Escribe una palabra">
+        <button class="button button-primary" value="search">Buscar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

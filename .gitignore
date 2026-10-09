@@ -1,0 +1,15 @@
+.DS_Store
+**/.DS_Store
+
+# Copias y herramientas locales: no forman parte del sitio público.
+_backup_before_integration/
+_backup_before_merge/
+_build/
+assets.zip
+figma-preview.html
+assets/*.ai
+
+# Archivos locales de editores y sistema.
+.idea/
+.vscode/
+*.swp

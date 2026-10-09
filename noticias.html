@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Noticias, investigaciones y recursos confiables para acompañar hábitos saludables en familia, seleccionados por ITASO-MX.">
+  <title>Noticias que inspiran | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23075c36'/%3E%3Cpath d='M18 25h28v23H18z' rx='6' fill='%236ec5f8'/%3E%3Cpath d='M25 25v-4a7 7 0 0114 0v4' fill='none' stroke='%23ffd640' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='36' r='4' fill='%23eb7a8a'/%3E%3Cpath d='M35 34h7M35 39h5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body class="news-page" data-page="news">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="news-hero" aria-labelledby="news-title">
+      <div class="site-container news-hero-grid">
+        <div class="news-hero-copy">
+          <span class="section-kicker">NOTICIAS</span>
+          <h1 id="news-title">Noticias que <span>inspiran</span></h1>
+          <p class="news-hero-lead">Descubre novedades, investigaciones, recursos y experiencias que pueden ayudarte a acompañar los hábitos de tu familia.</p>
+          <p class="news-hero-note">Información clara y confiable para seguir aprendiendo juntos.</p>
+        </div>
+
+        <div class="news-hero-art" role="img" aria-label="Libro abierto y tarjeta ITASO acompañados por elementos editoriales">
+          <span class="news-hero-blob" aria-hidden="true"></span>
+          <span class="news-doodle news-doodle-star" aria-hidden="true">✦</span>
+          <span class="news-doodle news-doodle-lines" aria-hidden="true">⌁⌁⌁</span>
+          <div class="news-paper" aria-hidden="true">
+            <span></span><strong>ITASO</strong><i></i><i></i><i></i>
+          </div>
+          <img class="news-hero-person news-hero-book" src="assets/libros y más/libro abierto.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="news-discovery" aria-labelledby="news-search-title">
+      <div class="site-container">
+        <div class="news-search-heading">
+          <div>
+            <span class="section-kicker">ENCUENTRA LO QUE NECESITAS</span>
+            <h2 id="news-search-title">Buscar noticias</h2>
+          </div>
+          <p>ITASO selecciona contenidos de instituciones públicas, universidades y organismos especializados. Cada tarjeta identifica su fuente original.</p>
+        </div>
+
+        <div class="news-search-control">
+          <span aria-hidden="true">⌕</span>
+          <label class="visually-hidden" for="news-search">Buscar por título, categoría, etiqueta o fuente</label>
+          <input id="news-search" type="search" inputmode="search" autocomplete="off" placeholder="Busca un tema..." data-news-search>
+          <button type="button" data-clear-news-search aria-label="Borrar búsqueda" hidden>×</button>
+        </div>
+
+        <div class="news-filter-wrap">
+          <span class="news-filter-label" id="news-filter-label">Filtrar por tema</span>
+          <div class="news-filters" role="group" aria-labelledby="news-filter-label">
+            <button type="button" data-news-filter="Todas" aria-pressed="true">Todas <span aria-hidden="true">✓</span></button>
+            <button type="button" data-news-filter="Alimentación" aria-pressed="false">Alimentación <span aria-hidden="true">✓</span></button>
+            <button type="button" data-news-filter="Investigación" aria-pressed="false">Investigación <span aria-hidden="true">✓</span></button>
+            <button type="button" data-news-filter="Vida cotidiana" aria-pressed="false">Vida cotidiana <span aria-hidden="true">✓</span></button>
+            <button type="button" data-news-filter="Eventos" aria-pressed="false">Eventos <span aria-hidden="true">✓</span></button>
+            <button type="button" data-news-filter="Comunidad" aria-pressed="false">Comunidad <span aria-hidden="true">✓</span></button>
+            <button type="button" data-news-filter="Recursos" aria-pressed="false">Recursos <span aria-hidden="true">✓</span></button>
+          </div>
+        </div>
+
+        <p class="news-results-status" data-news-results-status role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="news-featured-section" aria-labelledby="featured-news-title">
+      <div class="site-container">
+        <div class="news-section-heading">
+          <span class="section-kicker">SELECCIÓN EDITORIAL</span>
+          <h2 id="featured-news-title">Lo más reciente</h2>
+        </div>
+        <div class="news-editorial-grid" data-news-editorial aria-live="polite"></div>
+        <div class="news-empty-state" data-news-empty hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>No encontramos noticias en esta categoría</h3>
+          <p>Prueba con otro tema o vuelve a consultar todas las noticias.</p>
+          <button class="button button-primary" type="button" data-show-all-news>Ver todas</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-personal-section" aria-labelledby="personal-news-title">
+      <div class="site-container">
+        <div data-news-personal-intro></div>
+        <div class="news-personal-grid" data-news-personal></div>
+      </div>
+    </section>
+
+    <section class="more-news-section" aria-labelledby="more-news-title">
+      <div class="site-container">
+        <div class="news-section-heading news-section-heading-row">
+          <div>
+            <span class="section-kicker">SIGUE EXPLORANDO</span>
+            <h2 id="more-news-title">Más noticias</h2>
+          </div>
+          <p>Información externa seleccionada por ITASO por su claridad, utilidad y fuente verificable.</p>
+        </div>
+        <div class="more-news-grid" data-more-news></div>
+      </div>
+    </section>
+
+    <section class="news-newsletter-section" aria-labelledby="news-newsletter-title">
+      <div class="site-container news-newsletter-panel">
+        <div class="news-newsletter-copy">
+          <span class="section-kicker">COMUNIDAD ITASO</span>
+          <h2 id="news-newsletter-title">Recibe noticias y recursos en tu correo</h2>
+          <p>Sé parte de nuestra comunidad y entérate de nuevos artículos, eventos, actividades y materiales para acompañar hábitos más saludables.</p>
+        </div>
+        <form class="news-newsletter-form" data-news-page-newsletter novalidate>
+          <label for="news-newsletter-email">Tu correo electrónico</label>
+          <div>
+            <input id="news-newsletter-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nombre@ejemplo.com" aria-describedby="news-newsletter-status" required>
+            <button class="button button-primary" type="submit">Suscribirme <span aria-hidden="true">→</span></button>
+          </div>
+          <p id="news-newsletter-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="auth-dialog news-save-dialog" id="news-save-dialog" aria-labelledby="news-save-title">
+    <div class="auth-dialog-card">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar aviso">×</button>
+      <span class="section-kicker">GUARDA Y CONTINÚA DESPUÉS</span>
+      <h2 id="news-save-title">Guarda este contenido para después</h2>
+      <p>Inicia sesión para encontrarlo fácilmente en tu perfil.</p>
+      <div class="news-save-dialog-actions">
+        <a class="button button-primary" href="iniciar-sesion.html?returnTo=noticias.html">Iniciar sesión</a>
+        <button class="button button-secondary" type="button" data-dialog-close>Seguir explorando</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

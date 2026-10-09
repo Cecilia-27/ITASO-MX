@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Explora los juegos educativos de ITASO-MX para personas cuidadoras, niñas, niños y familias.">
+  <title>Juegos y experiencias | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2316556c'/%3E%3Ccircle cx='23' cy='28' r='8' fill='%23ffd640'/%3E%3Ccircle cx='41' cy='36' r='9' fill='%23eb7a8a'/%3E%3Cpath d='M18 47h29' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body class="games-page" data-page="juegos">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="games-catalog-hero" aria-labelledby="games-catalog-title">
+      <div class="site-container games-catalog-hero-grid">
+        <div class="games-catalog-hero-copy">
+          <span class="section-kicker">JUEGOS ITASO</span>
+          <h1 id="games-catalog-title">Aprender también puede ser explorar</h1>
+          <p class="games-catalog-lead">Experiencias interactivas para comprender situaciones cotidianas, explorar opciones y aprender en familia.</p>
+          <p>Cada actividad propone una forma distinta de aprender. Algunas están pensadas principalmente para personas cuidadoras y otras para participar junto con niñas y niños.</p>
+          <a class="button button-primary" href="#catalogo-juegos">Explorar juegos <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="games-catalog-hero-art" aria-label="Niña participando en una experiencia ITASO acompañada por una lunchera, un frasco y alimentos ilustrados">
+          <span class="games-art-blob" aria-hidden="true"></span>
+          <span class="games-art-note games-art-note-one" aria-hidden="true">investiga</span>
+          <span class="games-art-note games-art-note-two" aria-hidden="true">compara</span>
+          <img class="games-art-child" src="assets/characters/niña_tarjeta.svg" alt="Niña participando con una tarjeta ITASO">
+          <img class="games-art-lunchbox" src="assets/lunchboxes/azul.svg" alt="Lunchera azul ilustrada">
+          <img class="games-art-jar" src="assets/jarrones/jarron azul.svg" alt="Frasco azul ilustrado">
+          <img class="games-art-banana" src="assets/foods/platano.svg" alt="Plátano ilustrado">
+        </div>
+      </div>
+    </section>
+
+    <section class="games-audiences" aria-labelledby="games-audiences-title">
+      <div class="site-container">
+        <div class="games-section-heading">
+          <span class="section-kicker">FORMAS DE PARTICIPAR</span>
+          <h2 id="games-audiences-title">Elige una experiencia</h2>
+          <p>Encuentra el juego que mejor se adapte a lo que quieres resolver o aprender hoy.</p>
+        </div>
+
+        <div class="games-audience-grid">
+          <article>
+            <span class="games-line-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="8"></circle><path d="M10 41c1-11 6-16 14-16s13 5 14 16"></path></svg></span>
+            <div><h3>Para personas cuidadoras</h3><p>Herramientas para tomar decisiones cotidianas.</p></div>
+          </article>
+          <article>
+            <span class="games-line-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="17" r="8"></circle><path d="M12 42c1-10 5-15 12-15s11 5 12 15M15 11l-5-4M33 11l5-4"></path></svg></span>
+            <div><h3>Para niñas y niños</h3><p>Actividades para observar, participar y aprender.</p></div>
+          </article>
+          <article>
+            <span class="games-line-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="17" cy="17" r="7"></circle><circle cx="32" cy="19" r="6"></circle><path d="M5 42c1-10 5-15 12-15 5 0 9 3 11 9M25 29c2-2 4-3 7-3 6 0 9 5 10 16"></path></svg></span>
+            <div><h3>Para hacer en familia</h3><p>Experiencias donde pueden conversar y resolver juntos.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-catalog-section" id="catalogo-juegos" aria-labelledby="games-list-title">
+      <div class="site-container">
+        <div class="games-catalog-heading">
+          <div>
+            <span class="section-kicker">EXPERIENCIAS DISPONIBLES</span>
+            <h2 id="games-list-title">¿Qué quieren explorar hoy?</h2>
+          </div>
+          <p>Combinar, observar o investigar: cada juego propone una dinámica diferente.</p>
+        </div>
+
+        <nav class="games-filter-list" aria-label="Filtrar juegos">
+          <button type="button" data-game-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" data-game-filter="cuidadores" aria-pressed="false">Para cuidadores</button>
+          <button type="button" data-game-filter="ninos" aria-pressed="false">Para niñas y niños</button>
+          <button type="button" data-game-filter="familia" aria-pressed="false">En familia</button>
+          <button type="button" data-game-filter="alimentacion" aria-pressed="false">Alimentación</button>
+          <button type="button" data-game-filter="hidratacion" aria-pressed="false">Hidratación</button>
+        </nav>
+        <p class="games-filter-status" data-games-filter-status role="status" aria-live="polite">3 experiencias disponibles</p>
+
+        <div class="games-catalog-grid" data-games-grid>
+          <article class="games-experience-card game-lunch" data-game-card data-tags="cuidadores ninos familia alimentacion">
+            <div class="games-card-visual">
+              <span class="games-card-badge">ALIMENTACIÓN</span>
+              <img src="assets/lunchboxes/amarilla.svg" alt="Lunchera amarilla ilustrada">
+            </div>
+            <div class="games-card-copy">
+              <span class="games-audience-label">Personas cuidadoras</span>
+              <h3>¿Qué le mando de lunch?</h3>
+              <p>Encuentra distintas combinaciones de lunch según el tiempo y los alimentos disponibles en casa.</p>
+              <dl>
+                <div><dt>¿Para quién?</dt><dd>Personas cuidadoras; niñas y niños pueden expresar preferencias.</dd></div>
+                <div><dt>¿Qué aprenderás?</dt><dd>Facilitar decisiones cotidianas sin buscar un lunch “perfecto”.</dd></div>
+              </dl>
+              <span class="games-dynamic-label">COMBINAR + RESOLVER</span>
+              <a class="button button-primary" href="que-le-mando-de-lunch.html">Armar un lunch <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="games-experience-card game-portions" data-game-card data-tags="cuidadores familia alimentacion">
+            <div class="games-card-visual">
+              <span class="games-card-badge">PORCIONES</span>
+              <img src="assets/hands/mano abierta.svg" alt="Mano abierta ilustrada como referencia visual">
+              <img class="games-card-secondary-art" src="assets/plate/plato dividido.svg" alt="Plato dividido ilustrado">
+            </div>
+            <div class="games-card-copy">
+              <span class="games-audience-label">Personas cuidadoras · En familia</span>
+              <h3>¿Cuánto le sirvo?</h3>
+              <p>Descubre referencias visuales para comprender porciones utilizando las manos y el plato como guía.</p>
+              <dl>
+                <div><dt>¿Para quién?</dt><dd>Principalmente personas cuidadoras; puede participar la familia.</dd></div>
+                <div><dt>¿Qué aprenderás?</dt><dd>Comprender referencias visuales sin depender de medidas complicadas.</dd></div>
+              </dl>
+              <span class="games-dynamic-label">OBSERVAR + COMPARAR</span>
+              <a class="button button-primary" href="cuanto-le-sirvo.html">Explorar porciones <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="games-experience-card game-hydration" data-game-card data-tags="cuidadores ninos familia hidratacion">
+            <div class="games-card-visual">
+              <span class="games-card-badge">HIDRATACIÓN</span>
+              <div class="games-hydration-art" aria-hidden="true">
+                <img src="assets/jarrones/jarron azul.svg" alt="">
+                <img src="assets/jarrones/jarron amarillo.svg" alt="">
+                <img src="assets/jarrones/jarron rojo.svg" alt="">
+                <img src="assets/foods/agua simple.svg" alt="">
+              </div>
+            </div>
+            <div class="games-card-copy">
+              <span class="games-audience-label">Cuidador + niña o niño</span>
+              <h3>Detectives de la hidratación</h3>
+              <p>Investiga bebidas, compara opciones y descubre cuáles pueden acompañar mejor distintos momentos del día.</p>
+              <dl>
+                <div><dt>¿Para quién?</dt><dd>Persona cuidadora y niña o niño, investigando juntos.</dd></div>
+                <div><dt>¿Qué aprenderás?</dt><dd>Identificar bebidas y construir pequeñas estrategias de hidratación cotidiana.</dd></div>
+              </dl>
+              <span class="games-dynamic-label">INVESTIGAR + CLASIFICAR + CONVERSAR</span>
+              <span class="games-time-label">5–7 min</span>
+              <a class="button button-primary" href="detectives-hidratacion.html">Comenzar investigación <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="games-empty-state" data-games-empty hidden>
+          <h3>No encontramos una experiencia con ese filtro</h3>
+          <p>Prueba con otra opción o vuelve a consultar todos los juegos.</p>
+          <button class="button button-secondary" type="button" data-game-filter-reset>Ver todos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-guide-section" aria-labelledby="games-guide-title">
+      <div class="site-container games-guide-panel">
+        <div>
+          <span class="section-kicker">UNA PISTA PARA ELEGIR</span>
+          <h2 id="games-guide-title">¿No sabes por dónde empezar?</h2>
+          <p>Elige según lo que quieres resolver hoy.</p>
+        </div>
+        <div class="games-guide-options">
+          <a href="que-le-mando-de-lunch.html"><span>Necesito una idea de lunch</span><strong>¿Qué le mando de lunch? →</strong></a>
+          <a href="cuanto-le-sirvo.html"><span>Quiero entender mejor las porciones</span><strong>¿Cuánto le sirvo? →</strong></a>
+          <a href="detectives-hidratacion.html"><span>Quiero hablar sobre bebidas e hidratación</span><strong>Detectives de la hidratación →</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog">
+      <button class="dialog-close" value="close" aria-label="Cerrar búsqueda">×</button>
+      <span class="eyebrow eyebrow-blue">BUSCAR EN ITASO</span>
+      <h2 id="search-title">¿Qué quieres explorar?</h2>
+      <label for="site-search">Buscar recursos, juegos o noticias</label>
+      <div class="search-row">
+        <input id="site-search" type="search" placeholder="Escribe una palabra">
+        <button class="button button-primary" value="search">Buscar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=index.html">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="index.html">
+  <title>Redirigiendo a Inicio | ITASO-MX</title>
+  <script>
+    const destination = new URL("index.html", window.location.href);
+    destination.search = window.location.search;
+    destination.hash = window.location.hash;
+    window.location.replace(destination.href);
+  </script>
+</head>
+<body>
+  <p>La página Explora ahora es el inicio de ITASO-MX. <a href="index.html">Ir a Inicio</a>.</p>
+</body>
+</html>

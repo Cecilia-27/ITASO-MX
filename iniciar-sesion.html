@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Inicia sesión en ITASO-MX para guardar recursos y continuar tus actividades en familia.">
+  <title>Iniciar sesión | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23075c36'/%3E%3Cpath d='M18 25h28v23H18z' rx='6' fill='%236ec5f8'/%3E%3Cpath d='M25 25v-4a7 7 0 0114 0v4' fill='none' stroke='%23ffd640' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='36' r='4' fill='%23eb7a8a'/%3E%3Cpath d='M35 34h7M35 39h5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body class="login-page" data-page="login">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" class="login-main" tabindex="-1">
+    <section class="site-container login-shell" aria-labelledby="login-title">
+      <div class="login-layout">
+        <div class="login-form-panel">
+          <div class="login-heading">
+            <span class="section-kicker">INICIAR SESIÓN</span>
+            <h1 id="login-title">Bienvenido de nuevo a ITASO</h1>
+            <p>Continúa explorando recursos, guarda tus ideas y retoma tus actividades en familia.</p>
+          </div>
+
+          <form class="login-form" id="login-form" novalidate>
+            <div class="form-field" data-field="email">
+              <label for="login-email">Correo electrónico</label>
+              <input class="form-control" id="login-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nombre@ejemplo.com" aria-describedby="login-email-error" required>
+              <p class="field-error" id="login-email-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field" data-field="password">
+              <label for="login-password">Contraseña</label>
+              <div class="password-control">
+                <input class="form-control" id="login-password" name="password" type="password" autocomplete="current-password" aria-describedby="login-password-error" required>
+                <button class="password-toggle" type="button" data-password-toggle aria-label="Mostrar contraseña" aria-controls="login-password" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M2.5 12s3.4-5.5 9.5-5.5 9.5 5.5 9.5 5.5-3.4 5.5-9.5 5.5S2.5 12 2.5 12Z"></path>
+                    <circle cx="12" cy="12" r="2.7"></circle>
+                  </svg>
+                </button>
+              </div>
+              <p class="field-error" id="login-password-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-option" for="remember-me">
+                <input id="remember-me" name="remember" type="checkbox">
+                <span>Recordarme</span>
+              </label>
+              <button class="text-action" type="button" data-action="open-recovery">¿Olvidaste tu contraseña?</button>
+            </div>
+
+            <div class="login-feedback" id="login-feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+
+            <button class="button button-primary login-submit" type="submit">
+              <span data-login-button-label>Iniciar sesión</span> <span aria-hidden="true">→</span>
+            </button>
+          </form>
+
+          <div class="login-divider" aria-hidden="true"><span>o</span></div>
+
+          <button class="button login-google" type="button" data-action="prototype-google">
+            <span class="google-mark" aria-hidden="true">G</span> Continuar con Google
+          </button>
+
+          <div class="account-invitation">
+            <p>¿Aún no tienes cuenta?</p>
+            <button class="button button-secondary" type="button" data-action="open-registration">Crear una cuenta</button>
+          </div>
+
+          <div class="guest-access">
+            <p>También puedes consultar muchos de nuestros recursos sin registrarte.</p>
+            <a class="guest-link" href="index.html">Continuar sin cuenta <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <aside class="login-value-panel" aria-labelledby="account-value-title">
+          <div class="value-copy">
+            <span class="value-kicker">TU ESPACIO EN FAMILIA</span>
+            <h2 id="account-value-title">Tu espacio dentro de ITASO</h2>
+            <p>Guarda recursos, continúa tus actividades y encuentra más fácilmente las herramientas que necesitas.</p>
+
+            <ul class="benefit-list">
+              <li><span aria-hidden="true"><svg class="benefit-ui-icon" viewBox="0 0 24 24"><path d="M12 20s-7-4.2-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.8-7 10-7 10Z"></path></svg></span><strong>Guarda tus ideas</strong></li>
+              <li><span aria-hidden="true"><svg class="benefit-ui-icon" viewBox="0 0 24 24"><path d="M5 8V4m0 0h4M5 4l3.2 3.2A7 7 0 1 1 5.5 15"></path></svg></span><strong>Retoma tus actividades</strong></li>
+              <li><span aria-hidden="true"><svg class="benefit-ui-icon" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"></circle><path d="m15 15 5 5"></path></svg></span><strong>Encuentra tus recursos más rápido</strong></li>
+            </ul>
+          </div>
+
+          <div class="login-characters" role="img" aria-label="Una persona cuidadora, un niño y una especialista ITASO acompañados por recursos para aprender en familia">
+            <span class="login-blob login-blob-blue" aria-hidden="true"></span>
+            <span class="login-doodle login-doodle-star" aria-hidden="true">✦</span>
+            <span class="login-doodle login-doodle-dots" aria-hidden="true">• • •</span>
+            <img class="login-caregiver" src="assets/characters/mama.svg" alt="">
+            <img class="login-child" src="assets/characters/nino.svg" alt="">
+            <img class="login-specialist" src="assets/characters/especialista.svg" alt="">
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="auth-dialog" id="recovery-dialog" aria-labelledby="recovery-title">
+    <div class="auth-dialog-card">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar recuperación de acceso">×</button>
+      <span class="section-kicker">RECUPERAR CONTRASEÑA</span>
+      <h2 id="recovery-title">Recupera tu acceso</h2>
+      <p>Ingresa tu correo electrónico y te indicaremos cómo continuar.</p>
+      <form id="recovery-form" novalidate>
+        <label for="recovery-email">Correo electrónico</label>
+        <input class="form-control" id="recovery-email" name="email" type="email" inputmode="email" autocomplete="email" required>
+        <p class="dialog-status" data-dialog-status role="status" aria-live="polite"></p>
+        <button class="button button-primary" type="submit">Continuar</button>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="auth-dialog" id="registration-dialog" aria-labelledby="registration-title">
+    <div class="auth-dialog-card">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Cerrar creación de cuenta">×</button>
+      <span class="section-kicker">CREAR UNA CUENTA</span>
+      <h2 id="registration-title">Un espacio para acompañar, aprender y crecer en familia.</h2>
+      <form id="registration-form" novalidate>
+        <label for="registration-name">Nombre</label>
+        <input class="form-control" id="registration-name" name="name" type="text" autocomplete="name" required>
+
+        <label for="registration-email">Correo electrónico</label>
+        <input class="form-control" id="registration-email" name="email" type="email" inputmode="email" autocomplete="email" required>
+
+        <label for="registration-password">Contraseña</label>
+        <input class="form-control" id="registration-password" name="password" type="password" autocomplete="new-password" required>
+
+        <label for="registration-age">¿Qué edad tiene el niño o niña que acompañas? <span>(opcional)</span></label>
+        <select class="form-control" id="registration-age" name="age">
+          <option value="">Prefiero no indicarlo</option>
+          <option value="6-8">6–8 años</option>
+          <option value="9-12">9–12 años</option>
+          <option value="13+">13+ años</option>
+        </select>
+
+        <p class="dialog-status" data-dialog-status role="status" aria-live="polite"></p>
+        <button class="button button-primary" type="submit">Crear cuenta <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog">
+      <button class="dialog-close" value="close" aria-label="Cerrar búsqueda">×</button>
+      <span class="eyebrow eyebrow-blue">BUSCAR EN ITASO</span>
+      <h2 id="search-title">¿Qué quieres explorar?</h2>
+      <label for="site-search">Buscar recursos, juegos o noticias</label>
+      <div class="search-row">
+        <input id="site-search" type="search" placeholder="Escribe una palabra">
+        <button class="button button-primary" value="search">Buscar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

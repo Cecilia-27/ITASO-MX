@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf5">
+  <meta name="description" content="Prototipo interactivo ITASO-MX para crear ideas de lunch con lo que tienes en casa.">
+  <title>¿Qué le mando de lunch? | ITASO-MX</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23075c36'/%3E%3Cpath d='M18 25h28v23H18z' rx='6' fill='%236ec5f8'/%3E%3Cpath d='M25 25v-4a7 7 0 0114 0v4' fill='none' stroke='%23ffd640' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='36' r='4' fill='%23eb7a8a'/%3E%3Cpath d='M35 34h7M35 39h5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261009-13">
+</head>
+<body data-page="juegos">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header" data-site-header></header>
+
+  <main id="main-content" class="app-shell" tabindex="-1">
+    <section class="screen intro-screen is-active" id="screen-intro" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span aria-hidden="true">✦</span> JUEGO</span>
+        <h1 id="intro-title">¿Qué le mando<br><span>de lunch?</span></h1>
+        <p class="hero-lead">Arma un lunch con lo que tienes en casa y descubre distintas opciones para tu día.</p>
+        <div class="caregiver-note">
+          <div class="caregiver-avatars" aria-hidden="true">
+            <img src="assets/characters/mama.svg" alt="">
+            <img src="assets/characters/papa.svg" alt="">
+            <img src="assets/characters/abuela.svg" alt="">
+          </div>
+          <p><strong>Para quien prepara el lunch.</strong> Mamá, papá, abuela, abuelo u otra persona cuidadora.</p>
+        </div>
+        <button class="button button-primary hero-cta" type="button" data-action="start">Comenzar <span aria-hidden="true">→</span></button>
+      </div>
+
+      <div class="hero-visual" aria-label="Ilustración de niño con una lunchera">
+        <div class="sun-doodle" aria-hidden="true">✦</div>
+        <div class="hero-sticker sticker-one">Lista en pocos pasos</div>
+        <img class="hero-child" src="assets/characters/nino.svg" alt="Niño sonriente">
+        <img class="hero-lunchbox" src="assets/lunchboxes/azul.svg" alt="Lunchera azul ilustrada">
+      </div>
+
+      <div class="benefits" aria-label="Beneficios">
+        <article class="benefit-card">
+          <span class="benefit-icon coral" aria-hidden="true">⌂</span>
+          <p>Usa lo que tienes en casa</p>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-icon yellow" aria-hidden="true">↻</span>
+          <p>Encuentra distintas combinaciones</p>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-icon blue" aria-hidden="true">✦</span>
+          <p>Descubre nuevas ideas para el lunch</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen flow-screen" id="screen-time" aria-labelledby="time-title" hidden>
+      <div class="flow-toolbar">
+        <button class="back-button" type="button" data-action="back-intro"><span aria-hidden="true">←</span> Volver</button>
+        <button class="reset-link" type="button" data-action="reset">Reiniciar</button>
+      </div>
+      <div class="progress" aria-label="Paso 1 de 3">
+        <div class="progress-track" aria-hidden="true"><span class="progress-33"></span></div>
+        <strong>Paso 1 de 3</strong>
+      </div>
+
+      <div class="step-heading">
+        <span class="heading-doodle" aria-hidden="true">///</span>
+        <h2 id="time-title">¿Cuánto tiempo tienes hoy?</h2>
+        <p>Te mostraremos opciones que puedan adaptarse a tu tiempo.</p>
+      </div>
+
+      <div class="time-layout">
+        <aside class="helper-card">
+          <img src="assets/characters/nino.svg" alt="Personaje ITASO acompañando el paso">
+          <p><strong>¡Sin prisas!</strong> Elige el tiempo que realmente tienes hoy.</p>
+        </aside>
+
+        <div class="time-options" role="radiogroup" aria-label="Tiempo disponible">
+          <button class="time-card" type="button" role="radio" aria-checked="false" data-time="5">
+            <span class="time-check" aria-hidden="true">✓</span>
+            <span class="clock-icon clock-green" aria-hidden="true">◷</span>
+            <strong>5 min</strong>
+            <small>Algo muy rápido</small>
+          </button>
+          <button class="time-card" type="button" role="radio" aria-checked="false" data-time="15">
+            <span class="time-check" aria-hidden="true">✓</span>
+            <span class="clock-icon clock-blue" aria-hidden="true">◷</span>
+            <strong>10 a 15 min</strong>
+            <small>Con un poco de armado</small>
+          </button>
+          <button class="time-card" type="button" role="radio" aria-checked="false" data-time="30">
+            <span class="time-check" aria-hidden="true">✓</span>
+            <span class="clock-icon clock-coral" aria-hidden="true">◷</span>
+            <strong>Más tiempo</strong>
+            <small>Para preparar con calma</small>
+          </button>
+        </div>
+      </div>
+
+      <div class="step-actions align-end">
+        <button class="button button-primary" id="time-next" type="button" data-action="next-foods" disabled>Siguiente <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="screen flow-screen" id="screen-foods" aria-labelledby="foods-title" hidden>
+      <div class="flow-toolbar">
+        <button class="back-button" type="button" data-action="back-time"><span aria-hidden="true">←</span> Volver</button>
+        <button class="reset-link" type="button" data-action="reset">Reiniciar</button>
+      </div>
+      <div class="progress" aria-label="Paso 2 de 3">
+        <div class="progress-track" aria-hidden="true"><span class="progress-66"></span></div>
+        <strong>Paso 2 de 3</strong>
+      </div>
+
+      <div class="step-heading compact">
+        <span class="heading-doodle" aria-hidden="true">///</span>
+        <h2 id="foods-title">¿Qué tienes disponible?</h2>
+        <p>Selecciona los alimentos que tienes en casa.</p>
+      </div>
+
+      <div class="food-selector-layout">
+        <nav class="category-filters" aria-label="Filtrar alimentos por categoría" id="category-filters"></nav>
+        <div class="foods-column">
+          <p class="results-count" id="foods-count" aria-live="polite"></p>
+          <div class="food-grid" id="food-grid"></div>
+        </div>
+        <aside class="selection-panel" aria-labelledby="selected-title">
+          <div class="selection-heading">
+            <h3 id="selected-title">Seleccionados</h3>
+            <span id="selected-count">0</span>
+          </div>
+          <div class="selected-list" id="selected-list" aria-live="polite">
+            <p class="empty-selection">Elige al menos un alimento para comenzar.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="preference-card">
+        <div>
+          <h3 id="preference-title">¿Hay algo que no acepta? <span>Opcional</span></h3>
+          <p>Selecciona una o más opciones. Lo tendremos en cuenta al generar los lunches.</p>
+        </div>
+        <div class="preference-options" role="group" aria-labelledby="preference-title">
+          <button type="button" class="preference-option" data-preference="ninguno" aria-pressed="true">Ninguno</button>
+          <button type="button" class="preference-option" data-preference="huevo" aria-pressed="false">Huevo</button>
+          <button type="button" class="preference-option" data-preference="atun" aria-pressed="false">Atún</button>
+          <button type="button" class="preference-option" data-preference="lacteos" aria-pressed="false">Lácteos</button>
+          <button type="button" class="preference-option" data-preference="verduras" aria-pressed="false">Verduras</button>
+          <button type="button" class="preference-option" data-preference="frutas" aria-pressed="false">Frutas</button>
+        </div>
+        <input id="preference" type="hidden" value="">
+      </div>
+
+      <div class="step-actions split-actions">
+        <button class="button button-secondary" type="button" data-action="back-time"><span aria-hidden="true">←</span> Volver</button>
+        <button class="button button-primary" id="generate-button" type="button" data-action="generate" disabled>Generar opciones <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="screen flow-screen" id="screen-results" aria-labelledby="results-title" hidden>
+      <div class="flow-toolbar">
+        <button class="back-button" type="button" data-action="back-foods"><span aria-hidden="true">←</span> Modificar selección</button>
+        <button class="reset-link" type="button" data-action="reset">Reiniciar</button>
+      </div>
+      <div class="progress" aria-label="Paso 3 de 3">
+        <div class="progress-track" aria-hidden="true"><span class="progress-100"></span></div>
+        <strong>Paso 3 de 3</strong>
+      </div>
+
+      <div class="step-heading results-heading">
+        <span class="heading-doodle" aria-hidden="true">///</span>
+        <h2 id="results-title">¡Aquí están tus opciones!</h2>
+        <p id="results-subtitle">Con lo que tienes y el tiempo disponible, puedes preparar:</p>
+      </div>
+
+      <div class="lunch-results" id="lunch-results" aria-live="polite"></div>
+
+      <div class="results-footer">
+        <p>Estas ideas son ejemplos educativos; puedes adaptarlas a tu familia.</p>
+        <button class="button button-secondary" type="button" data-action="regenerate"><span aria-hidden="true">↻</span> Generar otras opciones</button>
+      </div>
+    </section>
+
+    <section class="screen detail-screen" id="screen-detail" aria-labelledby="detail-title" hidden>
+      <div class="flow-toolbar">
+        <button class="back-button" type="button" data-action="back-results"><span aria-hidden="true">←</span> Ver otra opción</button>
+        <button class="reset-link" type="button" data-action="reset">Reiniciar</button>
+      </div>
+
+      <div class="detail-heading">
+        <span class="eyebrow eyebrow-blue">DETALLE DE TU LUNCH</span>
+        <h2 id="detail-title">¿Por qué puede funcionar?</h2>
+      </div>
+
+      <div class="detail-layout">
+        <article class="choice-card" id="detail-choice"></article>
+
+        <article class="specialist-card">
+          <div class="specialist-intro">
+            <div class="specialist-portrait">
+              <img src="assets/characters/especialista.svg" alt="Especialista ITASO">
+            </div>
+            <div>
+              <span>ESPECIALISTA ITASO</span>
+              <h3>Una opción que puedes hacer tuya</h3>
+              <p>Esta opción combina un alimento principal, una guarnición y una bebida. Puedes adaptarla según tu tiempo, lo disponible en casa y las preferencias de tu familia.</p>
+            </div>
+          </div>
+
+          <div class="advice-grid">
+            <section>
+              <span class="advice-icon yellow" aria-hidden="true">↔</span>
+              <h4>Si no tienes esto…</h4>
+              <p>Puedes sustituir algún ingrediente por otro similar que ya tengas en casa.</p>
+            </section>
+            <section>
+              <span class="advice-icon coral" aria-hidden="true">♡</span>
+              <h4>Si no le gusta…</h4>
+              <p>Prueba otra presentación o una alternativa que ya conozca y acepte.</p>
+            </section>
+            <section>
+              <span class="advice-icon blue" aria-hidden="true">✦</span>
+              <h4>Recuerda</h4>
+              <p>No necesitas preparar el lunch perfecto. Pequeños cambios y distintas combinaciones pueden ayudarte a variar lo que lleva.</p>
+            </section>
+          </div>
+        </article>
+      </div>
+
+      <div class="detail-actions">
+        <button class="button button-secondary" type="button" data-action="back-results"><span aria-hidden="true">←</span> Ver otra opción</button>
+        <button class="button button-primary" id="save-idea" type="button" data-action="save">Guardar esta idea</button>
+        <a class="button button-quiet" href="juegos.html">Volver a juegos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog">
+      <button class="dialog-close" value="close" aria-label="Cerrar búsqueda">×</button>
+      <span class="eyebrow eyebrow-blue">BUSCAR EN ITASO</span>
+      <h2 id="search-title">¿Qué quieres explorar?</h2>
+      <label for="site-search">Buscar recursos, juegos o noticias</label>
+      <div class="search-row">
+        <input id="site-search" type="search" placeholder="Escribe una palabra">
+        <button class="button button-primary" value="search">Buscar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js?v=20261009-16"></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>
